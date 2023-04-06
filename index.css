@@ -1,0 +1,56 @@
+/*ELEMENTS*/
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+form {
+    margin: 0;
+}
+
+[placeholder]:empty:before {
+    content: attr(placeholder);
+}
+
+input[type="submit"] {
+    display: none;
+}
+
+/*CLASSES*/
+.metric {
+    width: 100%;
+    /* height: 50px; */
+    /* line-height: 50px; */
+}
+
+.metric > * {
+    display: flex;
+}
+
+.metric * > * {
+    font-size: 18px;
+    line-height: 30px;
+    box-sizing: border-box;
+}
+
+.metric .name {
+    display: inline-block;
+    width: 240px;
+    text-align: center;
+    border: 1px solid;
+    border-color: rgb(118, 118, 118);
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+}
+
+.metric .value {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    border: 1px solid;
+    border-color: rgb(118, 118, 118);
+    border-radius: 3px;
+    padding: 0;
+    margin: 0;
+}
