@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>IPM Generator</title>
+        <link href="index.css" rel="stylesheet">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <main>
+            <section data-page="/">
+                <div class="block">
+                    <section>
+                        <div class="card">
+                            <section>
+                                <div class="box metric">
+                                    <form onsubmit="on.submit.metric(event)">
+                                        <input class="name" name="fullname" placeholder="Firstname Lastname" type="text" value="">
+                                        <input class="value" name="ipm" placeholder="0" type="number" value="">
+                                        <input type="submit">
+                                    </form>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="card" id="people">
+                            <section></section>
+                            <template>
+                                <div class="box metric">
+                                    <section>
+                                        <span class="name">Firstname Lastname</span>
+                                        <span class="value">24</span>
+                                    </section>
+                                </div>
+                            </template>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
